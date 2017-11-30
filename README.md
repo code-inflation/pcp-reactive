@@ -3,7 +3,9 @@ School proj about reactive programming in JS/ TS
 
 ## Reactive (Java- / TypeScript)
 - Basics idea: asynchronous data streams
+![Stream Example](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754/raw/35cc1edb69b7175fd1308800a244410890bc9b5f/zmulticlickstream.png)
 - Observers
+![Observer Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/854px-Observer.svg.png)
 - Hot vs. cold observables
     - COLD is when your observable creates the producer
     ```js
