@@ -1,11 +1,13 @@
 # Programming Concepts and Paradigms
 This repository holds our school project about reactive programming with reactiveX. We choose JavaScript/TypeScript to demonstrate how observables, observers and operators work.
 
-## Reactive programming background
+## [Reactive programming background](http://reactivex.io/rxjs/manual/overview.html#introduction)
 - Basics idea: asynchronous data streams
 
     ![Stream Example](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754/raw/35cc1edb69b7175fd1308800a244410890bc9b5f/zmulticlickstream.png)
-# Observers
+## [Observable](http://reactivex.io/rxjs/manual/overview.html#observable)
+    
+## [Observers](http://reactivex.io/rxjs/manual/overview.html#observer)
 ![Observer Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/854px-Observer.svg.png)
 - Hot vs. cold observables
     - COLD is when your observable creates the producer
@@ -24,12 +26,12 @@ This repository holds our school project about reactive programming with reactiv
         // have observer listen to producer here
         });
     ```
-## Subjects
+## [Subjects](http://reactivex.io/rxjs/manual/overview.html#subject)
 - AsyncSubject
 - Behavior Subject
 - Replay Subject
 
-## Operators
+## [Operators](http://reactivex.io/rxjs/manual/overview.html#operators)
 [RxMarbels](http://rxmarbles.com/)
 - Map
 - Filter
@@ -39,10 +41,11 @@ This repository holds our school project about reactive programming with reactiv
 - combineLatest
 - take
 
-## Frameworks:
+## [Languages](http://reactivex.io/languages.html)
 - RxJS
 - RxJava
-- Reactor
 
 ## Notes
+- http://reactivex.io/rxjs/manual/tutorial.html#external-references
+- http://reactivex.io/
 - https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
