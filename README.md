@@ -1,16 +1,15 @@
-# pcp-reactive
-School proj about reactive programming in JS/ TS
+# Programming Concepts and Paradigms
+This repository holds our school project about reactive programming with reactiveX. We choose JavaScript/TypeScript to demonstrate how observables, observers and operators work.
 
-## Reactive (Java- / TypeScript)
+## Reactive programming background
 - Basics idea: asynchronous data streams
 
     ![Stream Example](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754/raw/35cc1edb69b7175fd1308800a244410890bc9b5f/zmulticlickstream.png)
-- Observers
-
-    ![Observer Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/854px-Observer.svg.png)
+# Observers
+![Observer Pattern](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Observer.svg/854px-Observer.svg.png)
 - Hot vs. cold observables
     - COLD is when your observable creates the producer
-    ```js
+    ```javascript
         // COLD
         var cold = new Observable((observer) => {
         var producer = new Producer();
@@ -18,25 +17,32 @@ School proj about reactive programming in JS/ TS
         });
     ```
     - HOT is when your observable closes over the producer
-    ```js
+    ```javascript
         // HOT
         var producer = new Producer();
         var hot = new Observable((observer) => {
         // have observer listen to producer here
         });
     ```
-- Subjects
-	- Behavior Subject
-	- Replay Subject
-- Operators
-	- Map
-	- SwitchMap
-	- MergeMap
-	- Filter
-	- Scan
-- Frameworks:
-	- RxJS
-	- RxJava
+## Subjects
+- AsyncSubject
+- Behavior Subject
+- Replay Subject
+
+## Operators
+[RxMarbels](http://rxmarbles.com/)
+- Map
+- Filter
+- Scan
+- SwitchMap
+- MergeMap
+- combineLatest
+- take
+
+## Frameworks:
+- RxJS
+- RxJava
+- Reactor
 
 ## Notes
 - https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
