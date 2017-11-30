@@ -27,12 +27,13 @@ This repository holds our school project about reactive programming with reactiv
         });
     ```
 ## [Subjects](http://reactivex.io/rxjs/manual/overview.html#subject)
-- AsyncSubject
+- Async Subject
 - Behavior Subject
 - Replay Subject
 
 ## [Operators](http://reactivex.io/rxjs/manual/overview.html#operators)
 [RxMarbels](http://rxmarbles.com/)
+### Standard Operators
 - Map
 - Filter
 - Scan
@@ -40,6 +41,12 @@ This repository holds our school project about reactive programming with reactiv
 - MergeMap
 - combineLatest
 - take
+
+### Backpressure Operators
+- Throtteling
+- Buffering
+- Debounce
+- Windows
 
 ## [Languages](http://reactivex.io/languages.html)
 - RxJS
