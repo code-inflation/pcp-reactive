@@ -1,6 +1,5 @@
 // debounce - Emits a value from the source Observable only after a particular time span has passed without another source emission.
 var Rx = require('rxjs/Rx');
-console.log("### DEBOUNCE ###")
 var dnames = ["Susanna", "Joe", "Lu", "Timmy", "Rafael", "Lisa", "Tim", "Tom", "Test"];
 
 var dsource = Rx.Observable.create(function (observer) {
