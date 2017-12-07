@@ -15,10 +15,8 @@ stream.subscribe(console.log)
 // scan - Applies an accumulator function over the source Observable, and returns each intermediate result, with an optional seed value.
 console.log("### SCAN ###")
 var stream = Rx.Observable.from([1,2,3,4,5,6])
-    .scan((acc, curr) => acc * curr);
+    .scan((acc, curr) => acc + curr);
 stream.subscribe(console.log)
-
-// mergeMap
 
 // combineLatest - Whenever any input Observable emits a value, it computes a formula using the latest values from all the inputs, then emits the output of that formula.
 console.log("### COMBINELATEST ###")
