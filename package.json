@@ -1,14 +1,27 @@
 {
-  "name": "rxjs-demo",
+  "name": "code",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "PCP Reactive Project",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/code-inflation/pcp-reactive.git"
+  },
+  "keywords": [
+    "PCP",
+    "ReactiveX",
+    "RxJS"
+  ],
+  "author": "Dorus Janssens, Robin Bürgi",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/code-inflation/pcp-reactive/issues"
+  },
+  "homepage": "https://github.com/code-inflation/pcp-reactive#readme",
   "dependencies": {
-    "rxjs": "^5.5.2"
+    "rxjs": "^5.5.5"
   }
 }
