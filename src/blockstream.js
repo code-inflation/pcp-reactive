@@ -9,4 +9,4 @@ Socket.on('open', function open() {
 
 var eventStream = Rx.Observable.fromEvent(Socket, 'message');
   
-eventStream.debounceTime(250).subscribe(console.log)
+eventStream.scan((acc, value) => acc + 1, 0).subscribe(console.log)
