@@ -8,5 +8,9 @@ Socket.on('open', function open() {
   });
 
 var eventStream = Rx.Observable.fromEvent(Socket, 'message');
-  
-eventStream.scan((acc, value) => acc + 1, 0).subscribe(console.log)
+
+// all trades larger than 5 BTC
+eventStream.map(event => JSON.parse(event.data))
+  .map(data => data.x.inputs[0].prev_out.value/100000000)
+  .filter(btcVal => btcVal > 5)
+  .subscribe(btcVal => console.log(btcVal + " BTC"))
