@@ -28,11 +28,10 @@ export class AppComponent implements OnInit {
     this.transactions$ = Rx.Observable.fromEvent(ws, 'message');
 
     this.transactions$
-      .map((event: MessageEvent) => event.data)
-      .debounceTime(500)
+      .map((event: MessageEvent) => JSON.parse(event.data))
       .do(console.log)
-      .subscribe(inputData => {
-        const data = JSON.parse(inputData);
+      .filter(data => data.x.inputs[0].prev_out.value/100000000 > 5)
+      .subscribe(data => {
         this.transactionEvents.unshift(data);
         if (this.transactionEvents.length > 10) {
           this.transactionEvents.pop();

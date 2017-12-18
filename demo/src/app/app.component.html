@@ -19,13 +19,13 @@
       <div fxFlex="100">
         <div *ngFor="let input of transaction.x.inputs">
           <p color="accent">From: {{input.prev_out.addr}}</p>
-          <p>Amount: {{input.prev_out.value}}</p>
+          <p>Amount: {{input.prev_out.value / 100000000 }} BTC</p>
         </div>
       </div>
       <div fxFlex="100">
         <div *ngFor="let output of transaction.x.out">
           <p color="accent">To: {{output.addr}}</p>
-          <p>Amount: {{output.value}}</p>
+          <p>Amount: {{output.value / 100000000}} BTC</p>
         </div>
       </div>
     </mat-card-content>
