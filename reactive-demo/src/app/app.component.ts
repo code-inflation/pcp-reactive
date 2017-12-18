@@ -31,15 +31,15 @@ export class AppComponent implements OnInit {
 
     this.transactions$ = Rx.Observable.fromEvent(ws, 'message');
     this.transactions$
-    .map((event: MessageEvent) => event.data)
-    .subscribe(inputData => {
-      const data = JSON.parse(inputData);
-      console.log(data);
-      this.transactionEvents.unshift(data);
-      if (this.transactionEvents.length > 10) {
-        this.transactionEvents.pop();
-      }
-    });
+      .map((event: MessageEvent) => event.data)
+      .subscribe(inputData => {
+        const data = JSON.parse(inputData);
+        console.log(data);
+        this.transactionEvents.unshift(data);
+        if (this.transactionEvents.length > 10) {
+          this.transactionEvents.pop();
+        }
+      });
   }
 }
 // {
