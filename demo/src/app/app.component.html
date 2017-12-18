@@ -9,13 +9,13 @@
 
 <div class="container">
 
-  <mat-card>
+  <mat-card fxLayoutAlign="center">
     Total: {{ sumBitcoin }} BTC | Transaction count: {{ countTransactions }}
   </mat-card>
 
   <mat-card *ngFor="let transaction of transactionEvents">
     <mat-card-header>
-      <mat-card-title>
+      <mat-card-title fxLayoutAlign="center">
         <b>{{transaction.x.hash}}</b>
       </mat-card-title>
     </mat-card-header>
