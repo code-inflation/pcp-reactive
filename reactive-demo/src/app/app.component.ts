@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     this.transactions$ = Rx.Observable.fromEvent(ws, 'message');
     this.transactions$
       .map((event: MessageEvent) => event.data)
+      .debounceTime(500)
       .subscribe(inputData => {
         const data = JSON.parse(inputData);
         console.log(data);
