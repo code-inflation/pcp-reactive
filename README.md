@@ -57,3 +57,7 @@ This repository holds our school project about reactive programming with reactiv
 - http://reactivex.io/
 - https://medium.com/@benlesh/hot-vs-cold-observables-f8094ed53339
 - https://rxviz.com/examples/grouped-fibonacci
+
+## Run the examples
+To run the examples make sure you have node.js(tested Version 8.9.3LTS) installed on your system.
+Run npm install to install the dependencies and run the examples in the console with "node ./src/<filename>.js
